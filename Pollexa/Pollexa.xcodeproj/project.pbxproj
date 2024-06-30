@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BD34CAE2C146A4700EF17C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CAD2C146A4700EF17C2 /* AppDelegate.swift */; };
+		5BD34CB02C146A4700EF17C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CAF2C146A4700EF17C2 /* SceneDelegate.swift */; };
+		5BD34CB72C146A4800EF17C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD34CB62C146A4800EF17C2 /* Assets.xcassets */; };
+		5BD34CBA2C146A4800EF17C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD34CB82C146A4800EF17C2 /* LaunchScreen.storyboard */; };
+		5BD34CCF2C146A4900EF17C2 /* PollexaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CCE2C146A4900EF17C2 /* PollexaUITests.swift */; };
+		5BD34CD12C146A4900EF17C2 /* PollexaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CD02C146A4900EF17C2 /* PollexaUITestsLaunchTests.swift */; };
+		5BD34CE12C146CAB00EF17C2 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CE02C146CAB00EF17C2 /* Pool.swift */; };
+		5BD34CE32C146CB300EF17C2 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CE22C146CB300EF17C2 /* Option.swift */; };
+		5BD34CE52C146CBD00EF17C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CE42C146CBD00EF17C2 /* User.swift */; };
+		5BD34CE82C146CD800EF17C2 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CE72C146CD800EF17C2 /* DiscoverViewController.swift */; };
+		5BD34CEA2C146CEE00EF17C2 /* PoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CE92C146CEE00EF17C2 /* PoolTableViewCell.swift */; };
+		5BD34CEC2C146CF700EF17C2 /* PollOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CEB2C146CF700EF17C2 /* PollOptionCollectionViewCell.swift */; };
+		5BD34CF12C146D2000EF17C2 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CF02C146D2000EF17C2 /* DiscoverViewModel.swift */; };
+		5BD34CF42C146D3F00EF17C2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CF32C146D3F00EF17C2 /* AppCoordinator.swift */; };
+		5BD34CF62C146D4C00EF17C2 /* DiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CF52C146D4C00EF17C2 /* DiscoverCoordinator.swift */; };
+		5BD34CF92C146D6100EF17C2 /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CF82C146D6100EF17C2 /* MockDataService.swift */; };
+		5BD34CFC2C147EE100EF17C2 /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 5BD34CFB2C147EE100EF17C2 /* TinyConstraints */; };
+		5BD34CFF2C148D1000EF17C2 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34CFE2C148D1000EF17C2 /* UIColor+Ext.swift */; };
+		5BD34D012C14C87300EF17C2 /* TımeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D002C14C87300EF17C2 /* TımeCalculator.swift */; };
+		5BD34D032C14F09100EF17C2 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D022C14F09100EF17C2 /* UIView+Ext.swift */; };
+		5BD34D052C15187500EF17C2 /* UIDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D042C15187500EF17C2 /* UIDimension.swift */; };
+		5BD34D072C15257400EF17C2 /* PollUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D062C15257400EF17C2 /* PollUIComponent.swift */; };
+		5BD34D0A2C15323200EF17C2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D092C15323200EF17C2 /* CustomButton.swift */; };
+		5BD34D0C2C15372300EF17C2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D0B2C15372300EF17C2 /* Constant.swift */; };
+		5BD34D0E2C15393D00EF17C2 /* Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D0D2C15393D00EF17C2 /* Basic.swift */; };
+		5BD34D102C15E9DB00EF17C2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD34D0F2C15E9DB00EF17C2 /* String+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BD34CCB2C146A4900EF17C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BD34CA22C146A4700EF17C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BD34CA92C146A4700EF17C2;
+			remoteInfo = Pollexa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BD34CAA2C146A4700EF17C2 /* Pollexa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pollexa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD34CAD2C146A4700EF17C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BD34CAF2C146A4700EF17C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5BD34CB62C146A4800EF17C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BD34CB92C146A4800EF17C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BD34CBB2C146A4800EF17C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD34CCA2C146A4900EF17C2 /* PollexaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollexaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BD34CCE2C146A4900EF17C2 /* PollexaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollexaUITests.swift; sourceTree = "<group>"; };
+		5BD34CD02C146A4900EF17C2 /* PollexaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollexaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BD34CE02C146CAB00EF17C2 /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		5BD34CE22C146CB300EF17C2 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		5BD34CE42C146CBD00EF17C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5BD34CE72C146CD800EF17C2 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		5BD34CE92C146CEE00EF17C2 /* PoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTableViewCell.swift; sourceTree = "<group>"; };
+		5BD34CEB2C146CF700EF17C2 /* PollOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BD34CF02C146D2000EF17C2 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		5BD34CF32C146D3F00EF17C2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5BD34CF52C146D4C00EF17C2 /* DiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCoordinator.swift; sourceTree = "<group>"; };
+		5BD34CF82C146D6100EF17C2 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+		5BD34CFE2C148D1000EF17C2 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		5BD34D002C14C87300EF17C2 /* TımeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TımeCalculator.swift"; sourceTree = "<group>"; };
+		5BD34D022C14F09100EF17C2 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		5BD34D042C15187500EF17C2 /* UIDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDimension.swift; sourceTree = "<group>"; };
+		5BD34D062C15257400EF17C2 /* PollUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollUIComponent.swift; sourceTree = "<group>"; };
+		5BD34D092C15323200EF17C2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5BD34D0B2C15372300EF17C2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5BD34D0D2C15393D00EF17C2 /* Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.swift; sourceTree = "<group>"; };
+		5BD34D0F2C15E9DB00EF17C2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BD34CA72C146A4700EF17C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD34CFC2C147EE100EF17C2 /* TinyConstraints in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD34CC72C146A4900EF17C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BD34CA12C146A4700EF17C2 = {
+			isa = PBXGroup;
+			children = (
+				5BD34CAC2C146A4700EF17C2 /* Pollexa */,
+				5BD34CCD2C146A4900EF17C2 /* PollexaUITests */,
+				5BD34CAB2C146A4700EF17C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BD34CAB2C146A4700EF17C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CAA2C146A4700EF17C2 /* Pollexa.app */,
+				5BD34CCA2C146A4900EF17C2 /* PollexaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BD34CAC2C146A4700EF17C2 /* Pollexa */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CDE2C146C0300EF17C2 /* Application */,
+				5BD34CDD2C146BE300EF17C2 /* Models */,
+				5BD34CE62C146CC500EF17C2 /* Views */,
+				5BD34CEF2C146D0700EF17C2 /* ViewModels */,
+				5BD34CF22C146D2900EF17C2 /* Coordinators */,
+				5BD34CF72C146D5300EF17C2 /* Services */,
+				5BD34CFD2C148CF700EF17C2 /* Utilities */,
+				5BD34D082C1526C100EF17C2 /* Component */,
+				5BD34CDF2C146C2800EF17C2 /* Resources */,
+			);
+			path = Pollexa;
+			sourceTree = "<group>";
+		};
+		5BD34CCD2C146A4900EF17C2 /* PollexaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CCE2C146A4900EF17C2 /* PollexaUITests.swift */,
+				5BD34CD02C146A4900EF17C2 /* PollexaUITestsLaunchTests.swift */,
+			);
+			path = PollexaUITests;
+			sourceTree = "<group>";
+		};
+		5BD34CDD2C146BE300EF17C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CE02C146CAB00EF17C2 /* Pool.swift */,
+				5BD34CE22C146CB300EF17C2 /* Option.swift */,
+				5BD34CE42C146CBD00EF17C2 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BD34CDE2C146C0300EF17C2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CAD2C146A4700EF17C2 /* AppDelegate.swift */,
+				5BD34CAF2C146A4700EF17C2 /* SceneDelegate.swift */,
+				5BD34CB82C146A4800EF17C2 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5BD34CDF2C146C2800EF17C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CB62C146A4800EF17C2 /* Assets.xcassets */,
+				5BD34CBB2C146A4800EF17C2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BD34CE62C146CC500EF17C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CE72C146CD800EF17C2 /* DiscoverViewController.swift */,
+				5BD34CE92C146CEE00EF17C2 /* PoolTableViewCell.swift */,
+				5BD34CEB2C146CF700EF17C2 /* PollOptionCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BD34CEF2C146D0700EF17C2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CF02C146D2000EF17C2 /* DiscoverViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5BD34CF22C146D2900EF17C2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CF32C146D3F00EF17C2 /* AppCoordinator.swift */,
+				5BD34CF52C146D4C00EF17C2 /* DiscoverCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		5BD34CF72C146D5300EF17C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CF82C146D6100EF17C2 /* MockDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5BD34CFD2C148CF700EF17C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34CFE2C148D1000EF17C2 /* UIColor+Ext.swift */,
+				5BD34D0F2C15E9DB00EF17C2 /* String+Ext.swift */,
+				5BD34D022C14F09100EF17C2 /* UIView+Ext.swift */,
+				5BD34D002C14C87300EF17C2 /* TımeCalculator.swift */,
+				5BD34D042C15187500EF17C2 /* UIDimension.swift */,
+				5BD34D0B2C15372300EF17C2 /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5BD34D082C1526C100EF17C2 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5BD34D062C15257400EF17C2 /* PollUIComponent.swift */,
+				5BD34D092C15323200EF17C2 /* CustomButton.swift */,
+				5BD34D0D2C15393D00EF17C2 /* Basic.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BD34CA92C146A4700EF17C2 /* Pollexa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BD34CD42C146A4900EF17C2 /* Build configuration list for PBXNativeTarget "Pollexa" */;
+			buildPhases = (
+				5BD34CA62C146A4700EF17C2 /* Sources */,
+				5BD34CA72C146A4700EF17C2 /* Frameworks */,
+				5BD34CA82C146A4700EF17C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pollexa;
+			packageProductDependencies = (
+				5BD34CFB2C147EE100EF17C2 /* TinyConstraints */,
+			);
+			productName = Pollexa;
+			productReference = 5BD34CAA2C146A4700EF17C2 /* Pollexa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BD34CC92C146A4900EF17C2 /* PollexaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BD34CDA2C146A4900EF17C2 /* Build configuration list for PBXNativeTarget "PollexaUITests" */;
+			buildPhases = (
+				5BD34CC62C146A4900EF17C2 /* Sources */,
+				5BD34CC72C146A4900EF17C2 /* Frameworks */,
+				5BD34CC82C146A4900EF17C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BD34CCC2C146A4900EF17C2 /* PBXTargetDependency */,
+			);
+			name = PollexaUITests;
+			productName = PollexaUITests;
+			productReference = 5BD34CCA2C146A4900EF17C2 /* PollexaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BD34CA22C146A4700EF17C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5BD34CA92C146A4700EF17C2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					5BD34CC92C146A4900EF17C2 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 5BD34CA92C146A4700EF17C2;
+					};
+				};
+			};
+			buildConfigurationList = 5BD34CA52C146A4700EF17C2 /* Build configuration list for PBXProject "Pollexa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BD34CA12C146A4700EF17C2;
+			packageReferences = (
+				5BD34CFA2C147EE100EF17C2 /* XCRemoteSwiftPackageReference "TinyConstraints" */,
+			);
+			productRefGroup = 5BD34CAB2C146A4700EF17C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BD34CA92C146A4700EF17C2 /* Pollexa */,
+				5BD34CC92C146A4900EF17C2 /* PollexaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BD34CA82C146A4700EF17C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD34CBA2C146A4800EF17C2 /* LaunchScreen.storyboard in Resources */,
+				5BD34CB72C146A4800EF17C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD34CC82C146A4900EF17C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BD34CA62C146A4700EF17C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD34D052C15187500EF17C2 /* UIDimension.swift in Sources */,
+				5BD34CF42C146D3F00EF17C2 /* AppCoordinator.swift in Sources */,
+				5BD34D0A2C15323200EF17C2 /* CustomButton.swift in Sources */,
+				5BD34CE32C146CB300EF17C2 /* Option.swift in Sources */,
+				5BD34D032C14F09100EF17C2 /* UIView+Ext.swift in Sources */,
+				5BD34CE12C146CAB00EF17C2 /* Pool.swift in Sources */,
+				5BD34CF62C146D4C00EF17C2 /* DiscoverCoordinator.swift in Sources */,
+				5BD34D072C15257400EF17C2 /* PollUIComponent.swift in Sources */,
+				5BD34D0E2C15393D00EF17C2 /* Basic.swift in Sources */,
+				5BD34D0C2C15372300EF17C2 /* Constant.swift in Sources */,
+				5BD34CEA2C146CEE00EF17C2 /* PoolTableViewCell.swift in Sources */,
+				5BD34CAE2C146A4700EF17C2 /* AppDelegate.swift in Sources */,
+				5BD34CF92C146D6100EF17C2 /* MockDataService.swift in Sources */,
+				5BD34CEC2C146CF700EF17C2 /* PollOptionCollectionViewCell.swift in Sources */,
+				5BD34CE82C146CD800EF17C2 /* DiscoverViewController.swift in Sources */,
+				5BD34D102C15E9DB00EF17C2 /* String+Ext.swift in Sources */,
+				5BD34D012C14C87300EF17C2 /* TımeCalculator.swift in Sources */,
+				5BD34CE52C146CBD00EF17C2 /* User.swift in Sources */,
+				5BD34CF12C146D2000EF17C2 /* DiscoverViewModel.swift in Sources */,
+				5BD34CFF2C148D1000EF17C2 /* UIColor+Ext.swift in Sources */,
+				5BD34CB02C146A4700EF17C2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BD34CC62C146A4900EF17C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BD34CD12C146A4900EF17C2 /* PollexaUITestsLaunchTests.swift in Sources */,
+				5BD34CCF2C146A4900EF17C2 /* PollexaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BD34CCC2C146A4900EF17C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BD34CA92C146A4700EF17C2 /* Pollexa */;
+			targetProxy = 5BD34CCB2C146A4900EF17C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BD34CB82C146A4800EF17C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BD34CB92C146A4800EF17C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BD34CD22C146A4900EF17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BD34CD32C146A4900EF17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BD34CD52C146A4900EF17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pollexa/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollexa.app.Pollexa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BD34CD62C146A4900EF17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pollexa/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollexa.app.Pollexa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BD34CDB2C146A4900EF17C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollexa.app.PollexaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pollexa;
+			};
+			name = Debug;
+		};
+		5BD34CDC2C146A4900EF17C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollexa.app.PollexaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pollexa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BD34CA52C146A4700EF17C2 /* Build configuration list for PBXProject "Pollexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD34CD22C146A4900EF17C2 /* Debug */,
+				5BD34CD32C146A4900EF17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD34CD42C146A4900EF17C2 /* Build configuration list for PBXNativeTarget "Pollexa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD34CD52C146A4900EF17C2 /* Debug */,
+				5BD34CD62C146A4900EF17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BD34CDA2C146A4900EF17C2 /* Build configuration list for PBXNativeTarget "PollexaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD34CDB2C146A4900EF17C2 /* Debug */,
+				5BD34CDC2C146A4900EF17C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BD34CFA2C147EE100EF17C2 /* XCRemoteSwiftPackageReference "TinyConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/TinyConstraints";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BD34CFB2C147EE100EF17C2 /* TinyConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BD34CFA2C147EE100EF17C2 /* XCRemoteSwiftPackageReference "TinyConstraints" */;
+			productName = TinyConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5BD34CA22C146A4700EF17C2 /* Project object */;
+}
